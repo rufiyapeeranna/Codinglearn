@@ -1,17 +1,16 @@
 import java.util.Arrays;
 
 public class LearnArrays {
-    public static void secondmaxelement(int[] b)
+    public static void removeduplicate(int[] b)
 
     {
-      int secmaxelementt= Arrays.stream(b).boxed().sorted((Integer val1,Integer val2) -> val2-val1).
-        skip(1).findFirst().orElseThrow();
-        System.out.println(secmaxelementt);
+      Arrays.stream(b).distinct().forEach( c-> System.out.println(c));
+
 
     }
 
     public static void main(String[] args) {
-        int a[] ={23,43,2,11,33};
-        secondmaxelement(a);
+        int a[] ={23,43,23,11,33};
+        removeduplicate(a);
     }
 }
