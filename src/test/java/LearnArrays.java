@@ -1,17 +1,17 @@
 import java.util.Arrays;
 
 public class LearnArrays {
-    public static void secondminimun(int[] b)
+    public static void secondmaxelement(int[] b)
 
     {
-      int secelementt= Arrays.stream(b).boxed().sorted((Integer val1,Integer val2) -> val2-val1).
+      int secmaxelementt= Arrays.stream(b).boxed().sorted((Integer val1,Integer val2) -> val2-val1).
         skip(1).findFirst().orElseThrow();
-        System.out.println(secelementt);
+        System.out.println(secmaxelementt);
 
     }
 
     public static void main(String[] args) {
         int a[] ={23,43,2,11,33};
-        secondminimun(a);
+        secondmaxelement(a);
     }
 }
