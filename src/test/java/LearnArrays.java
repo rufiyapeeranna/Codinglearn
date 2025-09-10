@@ -10,7 +10,7 @@ public class LearnArrays {
     }
 
     public static void main(String[] args) {
-        int a[] ={23,43,23,11,33};
+        int a[] ={23,43,23,11,11,33};
         removeduplicate(a);
     }
 }
